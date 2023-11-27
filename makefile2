@@ -1,0 +1,10 @@
+go run  cmd/scheduler/main.go  \
+ --kube-api-qps=200 \
+ --kube-api-burst=300 \
+ --leader-elect=false \
+ --profiling=false \
+ --authentication-kubeconfig=/etc/kubernetes/scheduler.conf \
+ --authorization-kubeconfig=/etc/kubernetes/scheduler.conf  \
+ --kubeconfig=/etc/kubernetes/scheduler.conf  \
+ --config=/etc/kubernetes/lxyscore-config.yaml \
+ --v=5
